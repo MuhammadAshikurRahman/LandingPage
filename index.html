@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>লাল গুড় প্রোডাক্ট পেজ</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.rawgit.com/sh4hids/bangla-web-fonts/charukola-reguler-unicode/stylesheet.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">  
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>বিশুদ্ধ লাল গুড়</h1>
+            <p>স্বাদে আর গুণে অতুলনীয়</p>
+        </div>
+    </header>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <h2>আমাদের পণ্য</h2>
+        <div class="product-images">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVRySupaWTdn6YIx18cvjRxsD6uTIveTT4GQ&s" alt="লাল গুড় ১">
+            <img src="https://www.bongodorshon.com/uploads/story_image/the_bengal_s_nolen_gur_Jaggery_patali_bd.jpg" alt="লাল গুড় ২">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUuxkoeAW3ow7Y5YUtv0PAbseQQyANWFBhsg&s" alt="লাল গুড় ৩">
+        </div>
+        <div class="product-description">
+            <p>বিশুদ্ধ লাল গুড়, যা সম্পূর্ণ প্রাকৃতিক উপাদান দিয়ে তৈরি। এই গুড় পুষ্টিগুণে ভরপুর এবং স্বাস্থ্যকর।</p>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <h2>কিভাবে আমরা আমাদের লাল গুড় প্রস্তুত করি</h2>
+        <iframe src="https://www.youtube.com/embed/oPm97g6Hhrg" title="YouTube video" allowfullscreen></iframe>
+    </section>
+
+    
+
+
+
+    <section class="details-section">
+        <h2>আমাদের গুড়</h2>
+        <div class="details">
+            <p><i class="fas fa-check-circle"></i> আমরা বিশুদ্ধ লাল গুড় তৈরি করে থাকি।</p>
+            <p><i class="fas fa-check-circle"></i> আমাদের গুড় সম্পূর্ণ প্রাকৃতিক এবং পুষ্টিগুণে ভরপুর।</p>
+            <p><i class="fas fa-check-circle"></i> আমাদের গুড় স্বাস্থ্যকর এবং স্বাদে অতুলনীয়।</p>
+            <p><i class="fas fa-check-circle"></i> আমরা সর্বদা গুণগত মান বজায় রাখি।</p>
+            <p><i class="fas fa-check-circle"></i> আমাদের লাল গুড় স্থানীয় বাজারে পরিচিত এবং জনপ্রিয়।</p>
+        </div>
+    </section>
+    
+    
+
+    <section class="review-section">
+        <h2>গ্রাহকদের মতামত</h2>
+        <div class="review-container" id="reviewContainer">
+            <!-- Review cards will be loaded here dynamically -->
+        </div>
+    </section>
+    
+    
+
+    
+
+
+    <!-- Pricing Section -->
+<!-- Pricing Section -->
+<section class="pricing-section">
+    <h2>মূল্য</h2>
+    <div class="pricing-card">
+        <p>প্রতি কেজি গুড়ের মূল্য: <span class="original-price">৪০০ টাকা</span></p>
+        <p>বর্তমান মূল্য: <span class="highlighted-price">৩০০ টাকা</span></p>
+        <button class="order-btn">ঘরে বসে অর্ডার করুন</button>
+    </div>
+</section>
+
+
+
+    <!-- Order Section -->
+    <section class="order-section">
+        <h2>অর্ডার করুন</h2>
+        <div class="order-container">
+            <p>প্রোডাক্ট: <span class="product-name">লাল গুড়</span></p>
+            <div class="quantity-control">
+                <button class="decrement-btn">-</button>
+                <input type="number" class="quantity" value="1" min="1" step="1">
+                <button class="increment-btn">+</button>
+            </div>
+
+            <p>দাম: <span class="product-price">৩০০</span> টাকা</p>
+            <p>ডেলিভারি চার্জ: <span class="delivery-charge">৫০</span> টাকা</p>
+            <p>মোট টাকা: <span class="total-amount">৩৫০</span> টাকা</p>
+            
+            <form class="order-form">
+                <label for="name">নাম:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="phone">ফোন:</label>
+                <input type="text" id="phone" name="phone" required>
+    
+                <label for="address">ঠিকানা:</label>
+                <textarea id="address" name="address" required></textarea>
+    
+                <div class="payment-method">
+                    <label>পেমেন্ট পদ্ধতি:</label>
+                    <div id="select" >
+                        <label for="cod">ক্যাশ অন ডেলিভারি</label>
+                        <input type="radio" id="cod" name="payment" value="COD" checked>
+                    </div>
+                    <div id="select" >
+                        <label for="online">অনলাইন পেমেন্ট</label>
+                        <input type="radio" id="online" name="payment" value="Online">
+                    </div>
+                </div>
+    
+                <div class="mfs-section" style="display: none;">
+                    <label for="mfs">এমএফএস সিলেক্ট করুন:</label>
+                    <select id="mfs" name="mfs">
+                        <option value="bkash">বিকাশ</option>
+                        <option value="nagad">নগদ</option>
+                    </select>
+    
+                    <label for="mfs-amount">অ্যামাউন্ট:</label>
+                    <input type="text" id="mfs-amount" name="mfs-amount" readonly>
+    
+                    <label for="last4">শেষ ৪ ডিজিট:</label>
+                    <input type="text" id="last4" name="last4" maxlength="4" required>
+    
+                    <label for="trxid">ট্রাঞ্জেকশন আইডি:</label>
+                    <input type="text" id="trxid" name="trxid" required>
+                </div>
+    
+                <button type="submit">সাবমিট</button>
+            </form>
+        </div>
+    </section>
+    <div id="success-message" style="display: none;">
+        <h3>অর্ডার সফল হয়েছে!</h3>
+        <p>ধন্যবাদ আপনার অর্ডারের জন্য। বিস্তারিত তথ্য:</p>
+        <div id="order-details"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

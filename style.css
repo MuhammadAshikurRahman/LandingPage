@@ -1,0 +1,339 @@
+/* Global Styles */
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+header {
+    background: url('https://cdn.jagonews24.com/media/imgAllNew/BG/2019November/gur-20221217175326.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 5px;
+}
+
+header .header-content h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header .header-content p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+}
+
+/* Product Section */
+.product-section {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.product-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+
+
+.product-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-images img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+.product-images img:hover {
+    transform: scale(1.1); /* Slightly enlarge image */
+    opacity: 0.8; /* Add opacity effect */
+}
+
+
+.product-description p {
+    font-size: 1.1rem;
+    margin-top: 50px;
+}
+
+/* Video Section */
+.video-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.video-section iframe {
+    width: 80%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+/* Details section */
+.details-section {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.details-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: green;
+}
+
+.details-section p {
+    font-size: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #c01818;
+    line-height: 2; /* Adjust this value for spacing between lines */
+    text-align: center; /* Center-align text */
+}
+
+
+/* review section */
+.review-section {
+    padding: 40px;
+    background-color: #f4f4f9;
+    text-align: center;
+    scroll-behavior: smooth;
+    border-radius: 20px;
+}
+
+.review-section h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-y: auto;
+    max-height: 300px; /* Optional: limit scroll area height */
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+    justify-content: center; /* Horizontally center items */
+    align-items: center;    /* Vertically align items */
+    
+}
+
+.review-card {
+    flex: 0 0 calc(25% - 10px); /* Smaller cards, now 25% width */
+    max-width: calc(25% - 10px);
+    height: 250px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+}
+
+.review-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 100%;
+    
+    
+}
+
+@media (max-width: 768px) {
+    .review-card {
+        flex: 0 0 100%; /* 1 card per row on smaller screens */
+        max-width: 100%;
+    }
+}
+
+
+
+/* Price Section */
+.pricing-section {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    font-family: 'Charukola Unicode'; /* Apply Bengali font */
+    margin-bottom: 15px;
+
+}
+
+.pricing-section h2 {
+    font-size: 30px;
+}
+
+.pricing-card {
+    font-family: 'Charukola Unicode'; /* Apply Bengali font */
+    
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #666; /* Grey color for strikethrough */
+}
+
+.highlighted-price {
+    color: #d32f2f; /* Red color for highlight */
+    font-weight: bold;
+}
+
+.order-btn {
+    background-color: #007bff; /* Blue button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-family: 'Charukola Unicode';
+}
+
+.order-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
+
+
+
+
+/* Order Section */
+
+.order-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    font-family: "Noto Serif Bengali", serif;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#select {
+    margin-top: 15px;
+    display: flex;
+    align-items: center; /* Centers the content vertically */
+    gap: 10px; /* Adds spacing between radio button and label */
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+
+}
+
+#select:hover {
+    background-color: #e2e6ea; /* Change background on hover */
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0; /* Ensure no extra spacing around the label */
+    padding: 8px;
+}
+
+input[type="radio"] {
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+
+
+
+.order-container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quantity-control {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.quantity-control button {
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.quantity {
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.total-amount {
+    font-weight: bold;
+    color: #d32f2f;
+}
+
+.order-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.order-form input, 
+.order-form textarea, 
+.order-form select {
+    width: 90%;
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.order-form {
+    margin-top: 20px;
+}
+.mfs-section {
+    margin-top: 15px;
+}
+
+button[type="submit"] {
+    font-family: "Noto Serif Bengali", serif;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .product-images img {
+        width: 25%;
+    }
+
+    .video-section iframe {
+        width: 60%;
+    }
+}
